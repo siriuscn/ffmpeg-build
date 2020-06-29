@@ -6,8 +6,5 @@ addons:
       - nasm
     update: true
 language: objective-c
-cache: cocoapods
-before_install:
-  - gem install cocoapods # Since Travis is not always on latest version
 script:
   - bash build-ios.sh
