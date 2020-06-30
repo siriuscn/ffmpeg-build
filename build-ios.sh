@@ -10,10 +10,10 @@ mkdir gaspp && cd gaspp && \
 
 export PATH=/Users/travis/build/siriuscn/ffmpeg-build/FFmpeg/gaspp:$PATH
 
-export AS="gas-preprocessor.pl ${CC}"
-export ASCPP="gas-preprocessor.pl ${CC}"
-export CCAS="gas-preprocessor.pl ${CC}"
-export LDFLAGS="-lmsvcr120_app ${LDFLAGS}"
+export AS="gas-preprocessor.pl --arch arm64 -- ${CC}"
+export ASCPP="gas-preprocessor.pl --arch arm64 -- ${CC}"
+export CCAS="gas-preprocessor.pl --arch arm64 -- ${CC}"
+#export LDFLAGS="-lmsvcr120_app ${LDFLAGS}"
 
 pwd
 
