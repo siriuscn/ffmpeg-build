@@ -20,6 +20,6 @@ pwd
 
 cd ..
 
-env CFLAGS="-O3 -w -arch arm64" CXXFLAGS="-O3 -w -arch arm64" LDFLAGS="-O3 -w -arch arm64" ./configure --enable-cross-compile --arch=arm64 --target-os=darwin --cc="clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk" --as=$AS  --sysroot=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk --disable-everything --enable-demuxer=rtsp --enable-muxer=rtsp --enable-demuxer=flv --enable-muxer=flv --enable-decoder=h264 --enable-decoder=h264_vda --enable-decoder=h264_mediacodec --enable-protocol=rtp --enable-protocol=rtmp --disable-filters --enable-small --enable-static --enable-shared --enable-hwaccel=h264_vda --enable-hwaccel=h264_videotoolbox --disable-iconv
+env CFLAGS="-O3 -w -arch arm64" CXXFLAGS="-O3 -w -arch arm64" LDFLAGS="-O3 -w -arch arm64" ./configure --enable-cross-compile --arch=arm64 --target-os=darwin --cc="clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk" --as="$AS"  --sysroot=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk --disable-everything --enable-demuxer=rtsp --enable-muxer=rtsp --enable-demuxer=flv --enable-muxer=flv --enable-decoder=h264 --enable-decoder=h264_vda --enable-decoder=h264_mediacodec --enable-protocol=rtp --enable-protocol=rtmp --disable-filters --enable-small --enable-static --enable-shared --enable-hwaccel=h264_vda --enable-hwaccel=h264_videotoolbox --disable-iconv
 
 make
