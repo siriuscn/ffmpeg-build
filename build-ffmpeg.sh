@@ -18,7 +18,8 @@ THIN=`pwd`/"thin"
 
 #FDK_AAC=`pwd`/../fdk-aac-build-script-for-iOS/fdk-aac-ios
 
-CONFIGURE_FLAGS="--enable-cross-compile --arch=arm64 --target-os=darwin --disable-everything --enable-demuxer=rtsp --enable-muxer=rtsp --enable-demuxer=flv --enable-muxer=flv --enable-decoder=h264 --enable-decoder=h264_vda --enable-decoder=h264_mediacodec --enable-protocol=rtp --enable-protocol=rtmp --disable-filters --enable-small --enable-static --enable-shared --enable-hwaccel=h264_vda --enable-hwaccel=h264_videotoolbox --disable-iconv"
+CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-programs \
+                  --disable-doc --arch=arm64 --target-os=darwin --disable-everything --enable-demuxer=rtsp --enable-muxer=rtsp --enable-demuxer=flv --enable-muxer=flv --enable-decoder=h264 --enable-decoder=h264_vda --enable-decoder=h264_mediacodec --enable-protocol=rtp --enable-protocol=rtmp --disable-filters --enable-small --enable-static --enable-shared --enable-hwaccel=h264_vda --enable-hwaccel=h264_videotoolbox --disable-iconv"
 
 if [ "$X264" ]
 then
