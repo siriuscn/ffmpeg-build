@@ -11,7 +11,7 @@
 
 language: objective-c
 
-script: ./build-ffmpeg.sh 2>.stderr
+script: bash build-ffmpeg.sh 2>.stderr
 
 env:
     global:
