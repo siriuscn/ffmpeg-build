@@ -5,7 +5,7 @@ git clone -b n4.2 https://github.com/FFmpeg/FFmpeg.git
 cd FFmpeg
 
 mkdir gaspp && cd gaspp && \
-    wget -q https://raw.githubusercontent.com/yuvi/gas-preprocessor/master/gas-preprocessor.pl && \
+    wget -q https://github.com/libav/gas-preprocessor/raw/master/gas-preprocessor.pl && \
     chmod +x gas-preprocessor.pl
 
 export PATH=/Users/travis/build/siriuscn/ffmpeg-build/FFmpeg/gaspp:$PATH
