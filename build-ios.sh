@@ -10,6 +10,7 @@ mkdir gaspp && cd gaspp && \
 
 export PATH=/Users/travis/build/siriuscn/ffmpeg-build/FFmpeg/gaspp:$PATH
 
+export CC=clang
 export AS="gas-preprocessor.pl -arch aarch64 -- ${CC}"
 export ASCPP="gas-preprocessor.pl -arch aarch64 -- ${CC}"
 export CCAS="gas-preprocessor.pl -arch aarch64 -- ${CC}"
